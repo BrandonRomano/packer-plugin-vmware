@@ -21,7 +21,7 @@ VMware virtual machine.
 Here is an example. This example is fully functional as long as the source path
 points to a real VMX file with the proper settings:
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -33,7 +33,7 @@ points to a real VMX file with the proper settings:
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 source "vmware-vmx" "basic-example" {
