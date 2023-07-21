@@ -1,13 +1,13 @@
 The Packer Plugin for VMware with to create virtual machine images for use with VMware products.
 
 ### Installation
-Packer v1.7.0 and later 
+Packer v1.7.0 and later
 
 ```hcl
 packer {
   required_plugins {
     vmware = {
-      version = ">= x.y.z"
+      version = "~> 1"
       source = "github.com/hashicorp/vmware"
     }
   }
@@ -19,12 +19,12 @@ The plugin includes two builders which are able to create images, depending on y
 
 #### Builders
 
-- [vmware-iso](/packer/integrations/hashicorp/vmware/components/builders/iso) - Starts from an ISO file,
+- [vmware-iso](/packer/integrations/hashicorp/vmware/lates/components/builders/iso) - Starts from an ISO file,
   creates a brand new VMware VM, installs an OS, provisions software within
   the OS, then exports that machine to create an image. This is best for
   people who want to start from scratch.
 
-- [vmware-vmx](/packer/integrations/hashicorp/vmware/components/builders/vmx) - This builder imports an
+- [vmware-vmx](/packer/integrations/hashicorp/vmware/latest/components/builders/vmx) - This builder imports an
   existing VMware machine (from a VMX file), runs provisioners on top of that
   VM, and exports that machine to create an image. This is best if you have
   an existing VMware VM you want to use as the source. As an additional
