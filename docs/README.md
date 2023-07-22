@@ -19,12 +19,12 @@ The plugin includes two builders which are able to create images, depending on y
 
 #### Builders
 
-- [vmware-iso](/packer/integrations/hashicorp/vmware/latest/components/builder/iso) - Starts from an ISO file,
+- [vmware-iso](/packer/integrations/BrandonRomano/vmware/latest/components/builder/iso) - Starts from an ISO file,
   creates a brand new VMware VM, installs an OS, provisions software within
   the OS, then exports that machine to create an image. This is best for
   people who want to start from scratch.
 
-- [vmware-vmx](/packer/integrations/hashicorp/vmware/latest/components/builder/vmx) - This builder imports an
+- [vmware-vmx](/packer/integrations/BrandonRomano/vmware/latest/components/builder/vmx) - This builder imports an
   existing VMware machine (from a VMX file), runs provisioners on top of that
   VM, and exports that machine to create an image. This is best if you have
   an existing VMware VM you want to use as the source. As an additional
