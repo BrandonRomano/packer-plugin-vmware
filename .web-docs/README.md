@@ -1,7 +1,7 @@
 The Packer Plugin for VMware with to create virtual machine images for use with VMware products.
 
 ### Installation
-Packer v1.7.0 and later
+To install this plugin add this code into your Packer configuration and run [packer init](/packer/docs/commands/init)
 
 ```hcl
 packer {
@@ -12,6 +12,12 @@ packer {
     }
   }
 }
+```
+
+Alternatively, you can use `packer plugins install` to manage installation of this plugin.
+
+```sh
+packer plugins install github.com/hashicorp/vmware
 ```
 
 ### Components
