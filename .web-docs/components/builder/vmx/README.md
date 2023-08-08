@@ -760,7 +760,7 @@ boot time.
   
   NOTE: If using an Amazon EBS builder, you can specify the interface
   WinRM connects to via
-  [`ssh_interface`](/packer/integrations/BrandonRomano/amazon/latest/components/builder/ebs#ssh_interface)
+  [`ssh_interface`](/packer/integrations/hashicorp/amazon/latest/components/builder/ebs#ssh_interface)
 
 - `winrm_no_proxy` (bool) - Setting this to `true` adds the remote
   `host:port` to the `NO_PROXY` environment variable. This has the effect of
@@ -1058,7 +1058,7 @@ $ esxcli system settings advanced set -o /Net/GuestIPHack -i 1
 When using a remote VMware Hypervisor, the builder still downloads the ISO and
 various files locally, and uploads these to the remote machine. Packer currently
 uses SSH to communicate to the ESXi machine rather than the vSphere API.
-If you want to use vSphere API, see the [vsphere-iso](/packer/integrations/BrandonRomano/vsphere/latest/components/builder/vsphere-iso) builder.
+If you want to use vSphere API, see the [vsphere-iso](/packer/integrations/hashicorp/vsphere/latest/components/builder/vsphere-iso) builder.
 
 Packer also requires VNC to issue boot commands during a build, which may be
 disabled on some remote VMware Hypervisors. Please consult the appropriate

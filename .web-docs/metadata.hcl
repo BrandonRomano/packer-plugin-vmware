@@ -3,7 +3,7 @@
 integration {
   name = "VMware"
   description = "The Packer Plugin for VMware with to create virtual machine images for use with VMware products."
-  identifier = "packer/BrandonRomano/vmware"
+  identifier = "packer/hashicorp/vmware"
   component {
     type = "builder"
     name = "VMware ISO"
